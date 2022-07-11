@@ -8,10 +8,9 @@ html{
 .cabecera{
     background-image: url(./Imagenes/Promos\ \(1\).png);
     min-height: 100%;
-
 }
 .logo{
-    width: 5vw;
+    width: 6vw;
     height: 2%;
     padding: 1%;
 }
@@ -60,7 +59,7 @@ html{
 }
 .slider{
     width: 100%;
-    height: 600px;
+    height: 100%;
     overflow: hidden;
 }
 .slider ul{
@@ -78,25 +77,32 @@ html{
 
 .boton{
     background-color:rgb(248, 134, 191) ;
-    width: 100%;
+    width: 345%;
     border: solid 2px rgb(150, 63, 131);
     padding: 10px;
-    margin: 20px auto;
-    display: inline-block;
-    text-align: center;
+    margin: 5% auto;
     color: aliceblue;
+    text-align: center;
 }
 .boton a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 30px;
+    padding: 2px;
 }
 .textoresumen{
     color: rgb(150, 63, 131);
-    height: 150px;
+    width: 40vw;
+    height: 150vh;
+    margin: 1%;
     overflow: auto;
-    margin: 20px;
+}
+.resumen_nosotros{
+    color: rgb(150, 63, 131);
+    width: 98%;
+    height: 100%;
+    margin: 1%;
 }
 .facebook{
     width: 50px;
@@ -108,42 +114,32 @@ html{
     width: 50px;
 }
 .mapa{
-    width: 95vw ;
+    width: 97vw ;
     height: 70vh;
-    margin: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
     
 }
-.tamañovideo{
-    width: 65vw;
-    height: 50vh;
-    margin: 50px;
-    margin-left: 18rem;
-}
 .subtitulo{
+    width: 97vw;
     background-color: rgb(248, 134, 191);
     color: white;
     border: solid 2px rgb(150, 63, 131);
     padding: 10px;
-    margin: 20px auto;
+    margin: 5px auto;
     text-align: center;
 }
 .h3{
-    color: rgb(245, 100, 172);
-    padding: 0px;
-    margin: 5%;
+    color: white;
+    border: solid 2px rgb(150, 63, 131);
+    width: 99%;
+    padding: 3px;
+    margin: 0%;
     margin-top: 1%;
     margin-bottom: 1%;
     
-}
-.producto{
-    margin: 7%;
-    padding: 0%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-
-}
-.tipo_producto{
-    color: rgb(150, 63, 131);
 }
 .redes{
     padding: 6px;
@@ -153,4 +149,96 @@ html{
     margin-left: 1%;
     border-radius: 100%;
     background-color: rgb(245, 100, 172) ;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.box1{
+    background-color: palevioletred;
+    padding: 10px;
+    width: 98%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box2{
+    background-color:rgb(245, 100, 172);
+    grid-column: 1/3;
+    grid-row: 3/5;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 iframe{
+    width: 100%;
+    height: 100%;
+}
+.box3{
+    background-color: rgb(248, 134, 191);
+    grid-column: 3/4;
+    grid-row: 3/5;
+    height: 400px;
+}
+.box5{
+    background-color: rgb(248, 134, 191);
+    grid-column: 1/4;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box6{
+    background-color: rgb(245, 100, 172);
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+.box6 iframe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* grid galeria */
+.grilla{
+    width: 97%;
+    height: 97%;
+    background-color: rgb(150, 63, 131);
+    border: solid rgb(245, 100, 172) 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria_container{
+    background-color: rgb(245, 100, 172);
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: dense;
+}
+@media screen and (min-width: 250px) {
+    .wide{
+        grid-column: span 2;
+    }
+    .tall{
+        grid-row: span 2;
+    }  
+}
+
+.galeria_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 720px){
+    .encabezado_lista{
+        flex-direction: column;
+    }
 }
