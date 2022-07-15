@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicias Sandy|Nosotros</title>
+    <!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="../style.css">
     <!-- Animaciones -->
@@ -13,7 +15,25 @@
 <body class="body">
     <header class="cabecera">
         <!-- logo y el nav -->
-        <nav> 
+        <nav class="navbar navbar-expand-lg barranavegacion">
+            <div class="container-fluid">
+              <a class="navbar-brand letter-color" href="#">Nosotros
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link letter-color" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link letter-color" href="#">Nosotros</a>
+                  <a class="nav-link letter-color" href="./productos.html">Productos</a>
+                  <a class="nav-link letter-color" href="./galeria.html">Galeria</a>
+                  <a class="nav-link letter-color" href="./reserva.html">Hacé tu reserva</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav> 
             <ul class="encabezado_lista">
                 <a href="../index.html"><img src="../Imagenes/LogoDeliciasSandy.png" alt="logo" class="logo"></a>
                 
@@ -24,7 +44,7 @@
                 <li class="encabezado_lista_item animate__animated animate__pulse"> <a href="./reserva.html">Hacé tu reserva</a></li>
                 
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <div>
@@ -54,6 +74,7 @@
             </li>    
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

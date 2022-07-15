@@ -5,41 +5,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Delicias Sandy/home</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- css -->
         <link rel="stylesheet" href="style.css">
+        <!-- grids -->
         <link rel="stylesheet" href="grid.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <body class="body">
         <header class="cabecera">
             <!-- Cabecera del Sitio -->
-            <nav>  
-                <ul class="encabezado_lista">
+                <nav class="navbar navbar-expand-lg barranavegacion">
+                    <div class="container-fluid">
+                      <a class="navbar-brand letter-color" href="#">Home
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link letter-color" aria-current="page" href="#">Home</a>
+                          <a class="nav-link letter-color" href="./paginas/nosotros.html">Nosotros</a>
+                          <a class="nav-link letter-color" href="./paginas/productos.html">Productos</a>
+                          <a class="nav-link letter-color" href="./paginas/galeria.html">Galeria</a>
+                          <a class="nav-link letter-color" href="./paginas/reserva.html">Hacé tu reserva</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+<!--                 <ul class="encabezado_lista">
                     <a href="./index.html"><img src="./Imagenes/LogoDeliciasSandy.png" alt="logo" class="logo"></a>
                         <li class="encabezado_lista_item animate__animated animate__pulse"><a href="#">Home</a></li>
                         <li class="encabezado_lista_item animate__animated animate__pulse"><a href="paginas/nosotros.html">Nosotros</a></li>
                         <li class="encabezado_lista_item animate__animated animate__pulse"><a href="paginas/productos.html">Productos</a></li>
                         <li class="encabezado_lista_item animate__animated animate__pulse"><a href="paginas/galeria.html">Galeria</a></li>
                         <li class="encabezado_lista_item animate__animated animate__pulse"><a href="paginas/reserva.html">Hacé tu Reserva</a></li>
-                </ul>
+                </ul> -->
             </nav>
         </header>
         <main>
             <!-- Carrusel de Imagenes -->
-            <section>
-                <div class="slider">
-                    <ul>
-                        <li>
-                            <img src="./Imagenes/browniecake-png.png" alt="browniecakeoreo">
-                        </li>
-                        <li>
-                            <img src="./Imagenes/tartafrutillakiwi.png" alt="tartafrutillakiwi">
-                        </li>
-                        <li>
-                            <img src="./Imagenes/tortafrida.png" alt="tortafrida">
-                        </li>
-                    </ul>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagenes/tartasdulces.png" class="d-block imgcarousel" alt="tartasdulces">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/cakepop.png" class="d-block imgcarousel" alt="browniecake">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/chocolates-violetas.png" class="d-block imgcarousel" alt="chocolates-violetas">
+                  </div>
                 </div>
-            </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
             <!-- grid, texto e iframes  -->
                 <div class="grid_container">
                     <div class="box1">
@@ -76,5 +105,8 @@
                 </li>    
             </ul>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+  </html>
     </body>
     </html>
