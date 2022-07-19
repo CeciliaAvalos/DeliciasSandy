@@ -9,11 +9,10 @@ html{
     background-image: url(./Imagenes/Promos\ \(1\).png);
     min-height: 100%;
 }
-/* .logo{
-    width: 6vw;
-    height: 2%;
-    padding: 1%;
-} */
+body{
+    font-family: 'Playfair Display', serif;
+
+}
 .pepito{
     width: 20%;
     display: flex;
@@ -32,7 +31,6 @@ html{
 .encabezado_lista_item{
     background: rgb(252,109,181);
     background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
-/*     background-color:rgb(248, 134, 191) ; */
     border: solid 2px rgb(150, 63, 131);
     margin: 10px;
     border-radius: 15px;
@@ -64,26 +62,8 @@ html{
 .carousel-fade{
     width: auto;
 }
-/* .slider{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.slider ul{
-    display: flex;
-    width: 100%;
-}
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-.slider img{
-    width: 100%;
-    height: 100%;
-} */
 .boton{
     background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
-/*     background-color:rgb(248, 134, 191) ; */
     width: 345%;
     border: solid 2px rgb(150, 63, 131);
     padding: 10px;
@@ -93,7 +73,6 @@ html{
 }
 h1{
     background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
-   /*  background-color: rgb(248, 134, 191); */
     border: solid 2px rgb(150, 63, 131);
     padding: 10px;
     margin: 5% auto;
