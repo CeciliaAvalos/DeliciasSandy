@@ -142,7 +142,7 @@ h2{
     display: flex;
     justify-content: center;
 }
-h3{
+.h3{
     background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
     color: white;
     width: 99%;
@@ -261,8 +261,6 @@ h3{
     gap: 10px;
     padding: 10px;
     grid-auto-flow: dense;
-    display: flex;
-    justify-content: center;
 }
 @media screen and (min-width: 250px) {
     .wide{
