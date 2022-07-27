@@ -1,0 +1,68 @@
+@import "../paginas-sass/variables";
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 20px;
+}
+.body{
+    background-color: rgb(245, 215, 231);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.pepito{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    .cabecera{
+        background-image: url("../../Imagenes/Promos\ \(1\).png");
+        min-height: 100%;
+    }
+    .logo{
+        width: 6vw;
+        height: 2%;
+        padding: 1%;
+    }
+    .encabezado_lista{
+        margin: 0 auto;
+        width: 100%;
+        font-size: 100%;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 3px;
+    
+    }
+    & .lista_item{
+        background-color: $colorprimario ;
+        border: solid 2px $colorsecundario;
+        margin: 10px;
+        border-radius: 15px;
+    
+    }
+     &.a{
+        text-decoration: none;
+        color: white;
+        font-weight: 70%;
+        font-size: 30px;
+        padding: 10px;
+        list-style: none;
+    }
+}
+footer{
+    .redes{
+        padding: 6px;
+        margin-top: 1%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        border-radius: 100%;
+        background-color: $colorprimario;
+    }
+}

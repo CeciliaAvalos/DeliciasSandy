@@ -1,0 +1,13 @@
+@media screen and (max-width: 720px){
+    .encabezado_lista{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 250px) {
+    .wide{
+        grid-column: span 2;
+    }
+    .tall{
+        grid-row: span 2;
+    }  
+}
