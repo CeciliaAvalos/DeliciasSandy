@@ -11,10 +11,8 @@ html{
 }
 body{
     font-family: 'Playfair Display', serif;
-
 }
 .activo{
-    
     color: rgba(247,89,168,1);
 }
 .pepito{
@@ -83,6 +81,16 @@ h1{
     color: aliceblue;
     text-align: center;
 }
+@media screen and (max-width: 720px){
+    .box1{
+        width: 100%;
+        text-align: center;
+
+    }
+    h1{
+        width: 100%;
+    }
+}
 .boton a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -92,10 +100,16 @@ h1{
 }
 .textoresumen{
     color: rgb(150, 63, 131);
-    width: 50%;
+    width: 96%;
+    text-align: center;
     height: 100%;
     margin: 2%;
     overflow: auto;
+}
+@media screen and (max-width: 720px){
+    .textoresumen{
+        overflow: scroll;
+    }
 }
 .resumen_nosotros{
     color: rgb(150, 63, 131);
@@ -134,13 +148,19 @@ h2{
     background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
     color: aliceblue;
     border: solid 2px rgb(150, 63, 131);
-    width: 25%;
-    margin: 0%;
+    width: 30%;
+    margin: 1%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     font-size: 40px;
 }
+@media screen and (max-width: 720px){
+    h2{
+        width: 100%;
+    }
+}
+
 h3{
     background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
     color: white;
@@ -210,6 +230,13 @@ h3{
     font-size: 40px
 }
 @media screen and (max-width: 720px){
+    .box1{
+        display: flex;
+        padding: 10px;
+        font-size: 35px;
+        margin-bottom: 25%;
+
+    }
     .box1 h1{
         margin-bottom: 25%;
     }
@@ -228,11 +255,15 @@ h3{
 @media screen and (max-width: 720px){
     .box2{
         margin-top: -150px;
+
     }
     .box2 iframe{
-        width: 100%;
-        height: 150%;
+        width: 98%;
+        height: 100%;
         margin: auto;
+        display: flex;
+        justify-content: center;
+
     }
 }
 .box3{
@@ -245,13 +276,20 @@ h3{
     margin-left: 1%;
 }
 .box3 h3{
-    margin-bottom: 1%;
-    padding: 3%;
+    margin-bottom: 5%;
+    padding: 10%;
 }
 @media screen and (max-width: 720px){
     .box3{
-        margin-top: 5px;
+        margin: 1%;
         justify-content: center;
+        background: none
+    }
+    .box3 h3{
+        font-size: 20px;
+        margin: 1px;
+        text-align: start;
+        overflow: auto;
     }
 
 }
@@ -289,22 +327,28 @@ h3{
     justify-content: center;
     align-items: center;
 }
+.grilla img{
+    display: flex;
+    justify-content: center;
+}
 .grilla:hover {
     transform: scale(1.5);
     transition: all 1s;
 }
 .galeria_container{
-    background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
+    background: url(./Imagenes/Promos\ \(1\)\ \(1\).png);
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(250px, auto);
     gap: 10px;
     padding: 10px;
-    grid-auto-flow: column;
-    justify-content: center;
-    display: flex;
-    align-content: stretch;
+    grid-auto-flow: dense;
+}
+@media screen and (max-width: 720px){
+    .galeria_container{
+    grid-template-columns: auto;
+    }
 }
 @media screen and (min-width: 250px) {
     .wide{
@@ -363,4 +407,31 @@ h3{
 }
 .tamañocard{
     width: 50%;
+}
+@media screen and (max-width: 720px){
+    #carouselExampleFade{
+        display: none;   
+    }
+}
+.tabla{
+    background: linear-gradient(189deg, rgba(252,109,181,1) 0%, rgba(247,89,168,1) 50%, rgba(255,168,211,0.7215777262180975) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    border: solid 2px rgb(150, 63, 131);
+    font-size: 25px;
+
+
+}
+.footer{
+    background-image: url(./Imagenes/Promos\ \(1\)\ \(1\).png);
+}
+.carousel{
+    margin-left: 7px;
+    margin-right: 0px;
+    width: 100%;
+    height: 90%;
 }
