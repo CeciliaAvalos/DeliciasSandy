@@ -1,0 +1,18 @@
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%boxflex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@mixin flex ($bg, $color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg;
+    color: $color;
+}
