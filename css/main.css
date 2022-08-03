@@ -1,5 +1,5 @@
 @charset "UTF-8";
-header .encabezado_lista, header .logo-position, header .nav-position {
+header .encabezado_lista, header .logo-position, header .nav-position, footer .redes, .grid_container .box2 iframe {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -28,77 +28,65 @@ html {
   display: flex;
   justify-content: center; }
 
-header .cabecera {
-  background-image: url("../../Imagenes/fondoPastelitos.png");
-  min-height: 100%; }
-
-header .encabezado_lista {
-  margin: 0 auto;
-  width: 100%;
-  font-size: 100%;
-  list-style: none;
-  padding: 3px; }
-
-header .lista_item {
-  background-color: #f564ac;
-  border: solid 2px #963f83;
-  margin: 10px;
-  border-radius: 15px; }
-
-header.a {
-  text-decoration: none;
-  color: white;
-  font-weight: 70%;
-  font-size: 30px;
-  padding: 10px;
-  list-style: none; }
-
-header.lista_item:hover {
-  animation: animate__pulse;
-  transition: all 0.5s; }
-
-header .barranavegacion {
+header {
   background-image: url("../../Imagenes/fondoPastelitos.png"); }
-
-header .letter-color {
-  color: #963f83;
-  background-color: whitesmoke;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: 70%;
-  font-size: 30px;
-  padding: 5px;
-  margin-right: 30px; }
-
-header .activo {
-  color: #f759a8; }
-
-header .logo-img {
-  width: 8%;
-  height: 2%;
-  padding: 1%; }
-
-header .logo-position {
-  flex-wrap: wrap; }
-
-header .nav-position {
-  flex-wrap: wrap; }
-
-header .logo {
-  width: 6vw;
-  height: 2%;
-  padding: 1%; }
+  header .cabecera {
+    min-height: 100%; }
+  header .encabezado_lista {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 100%;
+    list-style: none;
+    padding: 3px; }
+  header .lista_item {
+    background-color: #f564ac;
+    border: solid 2px #963f83;
+    margin: 10px;
+    border-radius: 15px; }
+  header.a {
+    text-decoration: none;
+    color: white;
+    font-weight: 70%;
+    font-size: 30px;
+    padding: 10px;
+    list-style: none; }
+  header.lista_item:hover {
+    animation: animate__pulse;
+    transition: all 0.5s; }
+  header .barranavegacion {
+    background-image: url("../../Imagenes/fondoPastelitos.png"); }
+  header .letter-color {
+    color: #963f83;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 70%;
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 30px; }
+  header .activo {
+    color: #f759a8; }
+  header .logo-img {
+    width: 8%;
+    height: 2%;
+    padding: 1%; }
+  header .logo-position {
+    flex-wrap: wrap; }
+  header .nav-position {
+    flex-wrap: wrap; }
+  header .logo {
+    width: 6vw;
+    height: 2%;
+    padding: 1%; }
 
 footer {
   background-image: url("../../Imagenes/fondoPastelitos.png"); }
   footer .redes {
-    padding: 6px;
-    margin-top: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    border-radius: 100%;
-    background-color: #f564ac; }
+    margin: 0 auto;
+    width: 100%;
+    font-size: 100%;
+    list-style: none;
+    margin: 5px; }
   footer .facebook {
     width: 50px; }
   footer .instagram {
@@ -202,20 +190,24 @@ footer {
     grid-row: 3/5;
     height: 100%;
     width: 100%; }
-    .grid_container .box2 .iframe {
+    .grid_container .box2 iframe {
       width: 100%;
-      height: 70%; }
+      height: 100%;
+      margin-left: 15px; }
   .grid_container .box3 {
     background: linear-gradient(189deg, #fc6db5 0%, #f759a8 50%, rgba(255, 168, 211, 0.721578) 100%);
     grid-column: 3/4;
     grid-row: 3/5;
     width: 95%;
-    height: 70%;
+    height: 90%;
     margin-top: 1%;
-    margin-left: 1%; }
-    .grid_container .box3 .h3 {
+    margin-left: 3%; }
+    .grid_container .box3 h3 {
+      width: 100%;
+      height: 150%;
       margin-bottom: 5%;
-      padding: 10%; }
+      padding: 5%;
+      font-size: 25px; }
   .grid_container .box4 {
     background: linear-gradient(189deg, #fc6db5 0%, #f759a8 50%, rgba(255, 168, 211, 0.721578) 100%);
     grid-column: 1/4;
@@ -287,15 +279,21 @@ footer {
     text-align: start;
     overflow: auto; } }
 
-@media screen and (max-width: 720px) {
-  .box5 iframe {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap; } }
-
+/* @media screen and (max-width: 720px){
+    .box5 iframe{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+} */
 @media screen and (max-width: 720px) {
   #carouselExampleFade {
     display: none; } }
+
+@media screen and (max-width: 720px) {
+  .box5 {
+    display: flex;
+    flex-wrap: nowrap; } }
 
 .tipo_producto {
   color: #963f83;
@@ -327,7 +325,7 @@ footer {
   border: solid 2px #963f83;
   font-size: 25px; }
 
-header .encabezado_lista, header .logo-position, header .nav-position {
+header .encabezado_lista, header .logo-position, header .nav-position, footer .redes, .grid_container .box2 iframe {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -392,7 +390,7 @@ h3 {
   text-align: center;
   font-size: 30px; }
 
-header .encabezado_lista, header .logo-position, header .nav-position {
+header .encabezado_lista, header .logo-position, header .nav-position, footer .redes, .grid_container .box2 iframe {
   display: flex;
   justify-content: center;
   align-items: center; }

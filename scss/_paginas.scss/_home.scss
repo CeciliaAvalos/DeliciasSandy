@@ -51,9 +51,12 @@
         grid-row: 3/5;
         height: 100%;
         width: 100%;
-        & .iframe{
+        & iframe{
             width: 100%;
-            height: 70%;
+            height: 100%;
+            margin-left: 15px;
+            @extend %flex;
+            
         }
     }
     .box3{
@@ -61,12 +64,16 @@
         grid-column: 3/4;
         grid-row: 3/5;
         width: 95%;
-        height: 70%;
+        height: 90%;
         margin-top: 1%;
-        margin-left: 1%;
-        & .h3{
+        margin-left: 3%;
+        & h3{
+            width: 100%;
+            height: 150%;
             margin-bottom: 5%;
-            padding: 10%;
+            padding: 5%;
+            font-size: 25px;
+
         }
     }
     .box4{
@@ -157,15 +164,22 @@
         overflow: auto;
     }
 }
-@media screen and (max-width: 720px){
+/* @media screen and (max-width: 720px){
     .box5 iframe{
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
     }
-}
+} */
 @media screen and (max-width: 720px){
     #carouselExampleFade{
         display: none;   
+    }
+}
+@media screen and (max-width: 720px){
+    .box5{
+        display: flex;
+        flex-wrap: nowrap;
+
     }
 }
