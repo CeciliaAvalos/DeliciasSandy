@@ -9,3 +9,23 @@
     border: $border;
     font-size: 25px;
 }
+@media screen and (max-width: 720px){
+    .tabla{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-bottom: 10px;
+
+    }
+    .tabladeenvios{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tipo_producto{
+        font-size: 20px;
+    }
+}

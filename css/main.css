@@ -145,7 +145,7 @@ footer {
   width: auto; }
 
 .imgcarousel {
-  width: 99vw;
+  width: 99.5%;
   height: 875px;
   margin: 1px;
   margin-top: 0px; }
@@ -155,6 +155,9 @@ footer {
   margin-right: 0px;
   width: 100%;
   height: 90%; }
+
+.carousel-width {
+  width: 100%; }
 
 .mapa {
   width: 97vw;
@@ -279,13 +282,6 @@ footer {
     text-align: start;
     overflow: auto; } }
 
-/* @media screen and (max-width: 720px){
-    .box5 iframe{
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-} */
 @media screen and (max-width: 720px) {
   #carouselExampleFade {
     display: none; } }
@@ -324,6 +320,22 @@ footer {
   margin-bottom: 20px;
   border: solid 2px #963f83;
   font-size: 25px; }
+
+@media screen and (max-width: 720px) {
+  .tabla {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 10px; }
+  .tabladeenvios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; }
+  .tipo_producto {
+    font-size: 20px; } }
 
 header .encabezado_lista, header .logo-position, header .nav-position, footer .redes, .grid_container .box2 iframe {
   display: flex;
@@ -389,6 +401,10 @@ h3 {
   margin-bottom: 1%;
   text-align: center;
   font-size: 30px; }
+
+@media screen and (max-width: 720px) {
+  .subtitulo {
+    font-size: 35px; } }
 
 header .encabezado_lista, header .logo-position, header .nav-position, footer .redes, .grid_container .box2 iframe {
   display: flex;
