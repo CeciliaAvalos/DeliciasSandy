@@ -1,20 +1,23 @@
 .carousel-fade{
-    width: auto;
-}
-.imgcarousel{
-    width: 99.5%;
-    height: 875px;
-    margin: 1px;
-    margin-top: 0px;
+    width: 100%;
 }
 .carousel{
-    margin-left: 7px;
-    margin-right: 0px;
+    margin-top: 20px;
+    margin-right: 13px;
     width: 100%;
-    height: 90%;
+    height: 50%;
 }
-.carousel-width{
+.carousel-inner{
+    background-image: url(../../Imagenes/rayas-rosadas-5312012.png);
     width: 100%;
+    height: 500px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+       & img{
+        height: 500px;
+        object-fit: contain;
+    
+    }
 }
 .mapa{
     width: 97vw ;
@@ -24,7 +27,8 @@
     justify-content: center;
     object-fit: cover;    
 }
-.grid_container{
+
+/* .grid_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
@@ -40,7 +44,7 @@
             @extend %boxflex;
             width: 100%;
             height: 100%;
-            margin: -2px;
+            margin: -2%;
             margin-top: 2%;
             margin-bottom: 2%;
             padding: 20px;
@@ -49,7 +53,7 @@
             font-weight: bold;
         }
     }
-    .box2{
+    .box3{
         grid-column: 1/3;
         grid-row: 3/5;
         height: 100%;
@@ -62,7 +66,7 @@
             
         }
     }
-    .box3{
+    .box2{
         background: $backgrounddegrade;
         grid-column: 3/4;
         grid-row: 3/5;
@@ -73,6 +77,7 @@
         & h3{
             width: 100%;
             height: 150%;
+            margin-top: 5px;
             margin-bottom: 5%;
             padding: 5%;
             font-size: 25px;
@@ -104,7 +109,7 @@
             margin-right: 0px;
         }
     }
-}
+} */
 @media screen and (max-width: 720px){
     .box1{
         width: 100%;

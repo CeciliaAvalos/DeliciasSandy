@@ -87,13 +87,22 @@ header{
 }
 footer{
     background-image: url("../../Imagenes/fondoPastelitos.png");
+    & ul{
+        width: 100% ;
+        display: flex;
+        justify-content: center;
+    }
+    & li{
+        width: 100% ;
+    }
     .redes{
-        @extend %flex;
         margin: 0 auto;
-        width: 100%;
+        width: 5%;
         font-size: 100%;
         list-style: none;
         margin: 5px;
+        display: flex;
+        justify-content: center;
     }
     .facebook{
         width: 50px;
