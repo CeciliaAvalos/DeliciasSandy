@@ -257,10 +257,6 @@ footer {
     width: 100%; } }
 
 @media screen and (max-width: 720px) {
-  .textoresumen {
-    overflow: scroll; } }
-
-@media screen and (max-width: 720px) {
   h2 {
     width: 100%; } }
 
@@ -270,43 +266,53 @@ footer {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 720px) {
-  .box1 {
+  .grid_container .box1 {
     display: flex;
     padding: 10px;
     font-size: 35px;
     margin-bottom: 0; }
-  .box1 h1 {
-    margin-bottom: 0; } }
+  .grid_container .box1 h1 {
+    margin-bottom: 0;
+    font-size: 30px; } }
 
 @media screen and (max-width: 720px) {
   .box2 {
-    margin-top: -150px; }
-  .box2 iframe {
-    width: 98%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center; } }
-
-@media screen and (max-width: 720px) {
-  .box3 {
-    width: 96%;
-    display: block;
-    height: 100%;
-    margin-left: -5px; }
-  .box3 h3 {
+    margin-top: 20px;
+    width: 10%; }
+  .grid_container .box2 h3 {
     font-size: 20px;
     margin: 1px;
-    text-align: start; } }
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px; } }
+
+@media (min-width: 721px) and (max-width: 2700px) {
+  .grid_container .box2 h3 {
+    margin-top: -7%;
+    margin-bottom: -3%; } }
+
+@media screen and (max-width: 720px) {
+  .grid_container .box3 {
+    width: 96%;
+    height: 100%;
+    margin-left: 5px; }
+    .grid_container .box3 .box3 iframe .tamañovideo {
+      width: 100%;
+      height: 70%;
+      margin-left: 10px; } }
 
 @media screen and (max-width: 720px) {
   #carouselExampleFade {
     display: none; } }
 
 @media screen and (max-width: 720px) {
-  .box5 {
+  .grid_container .box5 {
     display: flex;
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap;
+    margin-left: 0px; }
+    .grid_container .box5 .iframe {
+      width: 100%;
+      height: 10%; } }
 
 @media screen and (max-width: 720px) {
   .h2 {
