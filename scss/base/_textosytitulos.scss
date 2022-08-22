@@ -1,12 +1,11 @@
 @import "./extends";
 h1{
     background: $backgrounddegrade;
-    border: $border;
     padding: 10px;
-    margin: 1% auto;
+    margin: auto;
     color: $colortitulo;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 .textoresumen{
     color: $colorsecundario;
@@ -15,13 +14,18 @@ h1{
     height: 100%;
     margin-right: 10px;
     margin-left: 10px;
-    overflow: auto;
+    font-size: 25px;
 }
 .resumen_nosotros{
     color: $colorsecundario;
-    width: 100%;
+    width: 95%;
     height: 100%;
+    text-align: center;
     margin: 1px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    font-size: 25px;
 }
 .subtitulo{
     width: 100%;
@@ -35,13 +39,13 @@ h1{
 h2{
     @include flex ($backgrounddegrade, $colorsubtituloyh3);
     border: $border;
-    width: 30%;
+    width: 98%;
     margin: 1%;
     border-radius: 10px;
     font-size: 40px;
 }
 h3{
-    background: $backgrounddegrade;
+    background: $backgroundcolorbox;
     color: $colorsubtituloyh3;
     width: 100%;
     padding: 3px;
@@ -53,6 +57,20 @@ h3{
 }
 @media screen and (max-width: 720px){
     .subtitulo{
-        font-size: 35px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .resumen_nosotros{
+        width: 90%;
+        text-align: center;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 720px){
+    .textoresumen{
+        width: 90%;
+        text-align: center;
     }
 }

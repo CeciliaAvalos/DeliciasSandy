@@ -5,3 +5,10 @@
     list-style: none;
     font-size: 30px;
 }
+.productos{
+    background-image: url(../../Imagenes/fondoPastelitos.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
