@@ -85,7 +85,9 @@ footer {
   footer ul {
     width: 100%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -1%; }
   footer li {
     width: 100%; }
   footer .redes {
@@ -96,7 +98,8 @@ footer {
     list-style: none;
     margin: 5px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-right: 50px; }
   footer .facebook {
     width: 50px; }
   footer .instagram {
@@ -156,7 +159,8 @@ footer {
     justify-content: space-evenly; }
   .redes {
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    margin-right: 50px; } }
 
 .carousel-fade {
   width: 100%; }
@@ -323,7 +327,8 @@ footer {
   text-align: center;
   padding: 10px;
   list-style: none;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-left: -45px; }
 
 .productos {
   background-image: url(../../Imagenes/fondoPastelitos.png);
@@ -365,10 +370,19 @@ footer {
 .tipo_producto {
   background-color: aliceblue;
   margin-bottom: 10px;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+.responsive {
+  width: 100%; }
+
+@media screen and (max-width: 720px) {
+  .responsive {
+    width: 99%;
+    margin-right: 5px;
+    margin-left: 3px; } }
 
 @media screen and (max-width: 720px) {
   .tabla {
@@ -385,6 +399,16 @@ footer {
     width: 100%; }
   .tipo_producto {
     font-size: 20px; } }
+
+@media (min-width: 721px) and (max-width: 1024px) {
+  .tabla {
+    width: 90%;
+    margin-left: 5%; } }
+
+@media (min-width: 1025px) and (max-width: 1700px) {
+  .tabla {
+    width: 60%;
+    margin-left: 20%; } }
 
 header .encabezado_lista, header .logo-position, header .nav-position, .grid_container .box3, .grid_container .box3 iframe {
   display: flex;

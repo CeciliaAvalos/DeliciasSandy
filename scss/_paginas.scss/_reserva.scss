@@ -19,11 +19,23 @@
 .tipo_producto{
     background-color: aliceblue;
     margin-bottom: 10px;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+.responsive{
+    width: 100%;
+}
+@media screen and (max-width: 720px){
+    .responsive{
+        width: 99%;
+        margin-right: 5px;
+        margin-left: 3px;
+        
+    }
+}
+
 @media screen and (max-width: 720px){
     .tabla{
         display: flex;
@@ -32,7 +44,6 @@
         width: 100%;
         margin-left: auto;
         margin-bottom: 10px;
-
     }
     .tabladeenvios{
         display: flex;
@@ -43,4 +54,18 @@
     .tipo_producto{
         font-size: 20px;
     }
+}
+@media (min-width: 721px) and (max-width: 1024px){
+    .tabla{
+        width: 90%;
+        margin-left: 5%;
+
+    }
+}
+@media (min-width: 1025px) and (max-width: 1700px){
+    .tabla{
+        width: 60%;
+        margin-left: 20%;
+    }
+
 }
