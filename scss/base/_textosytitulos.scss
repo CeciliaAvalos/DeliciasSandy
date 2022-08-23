@@ -1,0 +1,76 @@
+@import "./extends";
+h1{
+    background: $backgrounddegrade;
+    padding: 10px;
+    margin: auto;
+    color: $colortitulo;
+    text-align: center;
+    font-size: 40px;
+}
+.textoresumen{
+    color: $colorsecundario;
+    width: 99%;
+    text-align: center;
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.resumen_nosotros{
+    color: $colorsecundario;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    margin: 1px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    font-size: 25px;
+}
+.subtitulo{
+    width: 100%;
+    background: $backgrounddegrade;
+    color: $colorsubtituloyh3;
+    border: $border;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+}
+h2{
+    @include flex ($backgrounddegrade, $colorsubtituloyh3);
+    border: $border;
+    width: 98%;
+    margin: 1%;
+    border-radius: 10px;
+    font-size: 40px;
+}
+h3{
+    background: $backgroundcolorbox;
+    color: $colorsubtituloyh3;
+    width: 100%;
+    padding: 3px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 30px;
+}
+@media screen and (max-width: 720px){
+    .subtitulo{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .resumen_nosotros{
+        width: 90%;
+        text-align: center;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 720px){
+    .textoresumen{
+        width: 90%;
+        text-align: center;
+    }
+}

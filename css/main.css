@@ -1,0 +1,506 @@
+@charset "UTF-8";
+header .encabezado_lista, header .logo-position, header .nav-position, .grid_container .box3, .grid_container .box3 iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid_container .box1, .grid_container .box1 h1, .grid_container .box4 {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+html {
+  font-size: 20px; }
+
+.body {
+  background-color: #f5d7e7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Playfair Display', serif; }
+
+.pepito {
+  width: 20%;
+  display: flex;
+  justify-content: center; }
+
+header {
+  background-image: url("../../Imagenes/fondoPastelitos.png"); }
+  header .cabecera {
+    min-height: 100%; }
+  header .encabezado_lista {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 100%;
+    list-style: none;
+    padding: 3px; }
+  header .lista_item {
+    background-color: #f564ac;
+    border: solid 2px #963f83;
+    margin: 10px;
+    border-radius: 15px; }
+  header.a {
+    text-decoration: none;
+    color: white;
+    font-weight: 70%;
+    font-size: 30px;
+    padding: 10px;
+    list-style: none; }
+  header.lista_item:hover {
+    animation: animate__pulse;
+    transition: all 0.5s; }
+  header .barranavegacion {
+    background-image: url("../../Imagenes/fondoPastelitos.png"); }
+  header .letter-color {
+    color: #963f83;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 70%;
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 30px; }
+  header .activo {
+    color: #f759a8; }
+  header .logo-img {
+    width: 8%;
+    height: 2%;
+    padding: 1%; }
+  header .logo-position {
+    flex-wrap: wrap; }
+  header .nav-position {
+    flex-wrap: wrap; }
+  header .logo {
+    width: 6vw;
+    height: 2%;
+    padding: 1%; }
+
+footer {
+  background-image: url("../../Imagenes/fondoPastelitos.png");
+  height: 150px; }
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -1%; }
+  footer li {
+    width: 100%; }
+  footer .redes {
+    margin: 0 auto;
+    width: 5%;
+    padding: 5px;
+    font-size: 100%;
+    list-style: none;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px; }
+  footer .facebook {
+    width: 50px; }
+  footer .instagram {
+    width: 50px; }
+  footer .whatsapp {
+    width: 50px; }
+
+/* grilla productos y galeria */
+.galeria_container {
+  background: url("../../Imagenes/fondoPastelitos.png");
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 10px;
+  padding: 10px;
+  grid-auto-flow: dense; }
+  .galeria_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.grilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+  color: none;
+  width: 97%;
+  height: 97%;
+  background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+  border: solid 2px #e380b2; }
+  .grilla img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    gap: 10px; }
+  .grilla :hover {
+    transform: scale(1.5);
+    transition: all 1s; }
+
+.tamañocard {
+  width: 50%; }
+
+@media screen and (max-width: 720px) {
+  .galeria_container {
+    grid-template-columns: auto; } }
+
+@media screen and (max-width: 720px) {
+  .footer {
+    width: 100%;
+    height: 170px; }
+  .footer ul {
+    display: flex;
+    justify-content: space-evenly; }
+  .redes {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px; } }
+
+.carousel-fade {
+  width: 100%; }
+
+.carousel {
+  margin-top: 20px;
+  margin-right: 13px;
+  width: 100%;
+  height: 50%; }
+
+.carousel-inner {
+  background-image: url(../../Imagenes/rayas-rosadas-5312012.png);
+  width: 100%;
+  height: 500px;
+  margin-right: 7px;
+  margin-bottom: 2px; }
+  .carousel-inner img {
+    height: 500px;
+    object-fit: contain; }
+
+.mapa {
+  width: 100%;
+  height: 70vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  object-fit: cover; }
+
+.grid_container {
+  width: 100%;
+  height: 30%; }
+  .grid_container .box1 {
+    background-color: none;
+    padding: 10px;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 1px; }
+    .grid_container .box1 h1 {
+      width: 100%;
+      height: 100%;
+      margin: -2%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      padding: 20px;
+      font-size: 50px;
+      font-weight: bolder;
+      font-weight: bold; }
+  .grid_container .box2 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+    width: 95%;
+    height: 90%;
+    margin-top: 1%;
+    margin-left: 3%; }
+    .grid_container .box2 h3 {
+      background-color: #f5d7e7;
+      color: #963f83;
+      width: 100%;
+      height: 90%;
+      margin-top: -120px;
+      margin-bottom: -35px;
+      padding: 5%;
+      font-size: 25px; }
+  .grid_container .box3 {
+    display: flex;
+    width: 100%;
+    height: 500px; }
+    .grid_container .box3 iframe {
+      width: 100%;
+      height: 100%; }
+  .grid_container .box4 {
+    background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+    grid-column: 1/4;
+    grid-row: 5/6;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .grid_container .box4 .h3 {
+      margin: -200px 1px 5px 1px;
+      padding: 20px;
+      text-align: center;
+      font-size: 35px; }
+  .grid_container .box5 {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    margin-left: 10px; }
+    .grid_container .box5 .iframe {
+      width: 99%;
+      margin-left: 9px;
+      display: flex;
+      justify-content: center;
+      margin-right: 0px; }
+
+@media screen and (max-width: 720px) {
+  .box1 {
+    width: 100%;
+    text-align: center; }
+  h1 {
+    width: 100%; } }
+
+@media screen and (max-width: 720px) {
+  h2 {
+    width: 100%; } }
+
+@media screen and (max-width: 720px) {
+  .grid_container {
+    display: block;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 720px) {
+  .grid_container .box1 {
+    display: flex;
+    padding: 10px;
+    font-size: 35px;
+    margin-bottom: 0; }
+  .grid_container .box1 h1 {
+    margin-bottom: 0;
+    font-size: 30px; } }
+
+@media screen and (max-width: 720px) {
+  .box2 {
+    margin-top: 20px;
+    width: 10%; }
+  .grid_container .box2 h3 {
+    font-size: 20px;
+    margin: 1px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px; } }
+
+@media (min-width: 721px) and (max-width: 2700px) {
+  .grid_container .box2 h3 {
+    margin-top: -7%;
+    margin-bottom: -3%; } }
+
+@media screen and (max-width: 720px) {
+  .grid_container .box3 {
+    width: 96%;
+    height: 100%;
+    margin-left: 5px; }
+    .grid_container .box3 .box3 iframe .tamañovideo {
+      width: 100%;
+      height: 70%;
+      margin-left: 10px; } }
+
+@media screen and (max-width: 720px) {
+  #carouselExampleFade {
+    display: none; } }
+
+@media screen and (max-width: 720px) {
+  .grid_container .box5 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0px; }
+    .grid_container .box5 .iframe {
+      width: 100%;
+      height: 10%; } }
+
+@media screen and (max-width: 720px) {
+  .h2 {
+    width: 98%; } }
+
+.tipo_producto {
+  color: #963f83;
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+  font-size: 30px;
+  margin-left: -45px; }
+
+.productos {
+  background-image: url(../../Imagenes/fondoPastelitos.png);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+  grid-auto-rows: minmax(80px, auto);
+  gap: 20px; }
+
+@media screen and (min-width: 250px) {
+  .wide {
+    grid-column: span 2; }
+  .tall {
+    grid-row: span 2; } }
+
+.tabla {
+  background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+  border: solid 2px #e380b2;
+  font-size: 25px; }
+
+.productos {
+  background-image: url(../../Imagenes/fondoPastelitos.png);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.tipo_producto {
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.responsive {
+  width: 100%; }
+
+@media screen and (max-width: 720px) {
+  .responsive {
+    width: 99%;
+    margin-right: 5px;
+    margin-left: 3px; } }
+
+@media screen and (max-width: 720px) {
+  .tabla {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 10px; }
+  .tabladeenvios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; }
+  .tipo_producto {
+    font-size: 20px; } }
+
+@media (min-width: 721px) and (max-width: 1024px) {
+  .tabla {
+    width: 90%;
+    margin-left: 5%; } }
+
+@media (min-width: 1025px) and (max-width: 1700px) {
+  .tabla {
+    width: 60%;
+    margin-left: 20%; } }
+
+header .encabezado_lista, header .logo-position, header .nav-position, .grid_container .box3, .grid_container .box3 iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid_container .box1, .grid_container .box1 h1, .grid_container .box4 {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+h1 {
+  background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+  padding: 10px;
+  margin: auto;
+  color: #faf0f6;
+  text-align: center;
+  font-size: 40px; }
+
+.textoresumen {
+  color: #963f83;
+  width: 99%;
+  text-align: center;
+  height: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 25px; }
+
+.resumen_nosotros {
+  color: #963f83;
+  width: 95%;
+  height: 100%;
+  text-align: center;
+  margin: 1px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  font-size: 25px; }
+
+.subtitulo {
+  width: 100%;
+  background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+  color: white;
+  border: solid 2px #e380b2;
+  padding: 10px;
+  margin: 5px auto;
+  text-align: center; }
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fc8dc9 0%, #f6a5ce 50%, #f7b8d7 100%);
+  color: white;
+  border: solid 2px #e380b2;
+  width: 98%;
+  margin: 1%;
+  border-radius: 10px;
+  font-size: 40px; }
+
+h3 {
+  background: #f491bd;
+  color: white;
+  width: 100%;
+  padding: 3px;
+  margin: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 30px; }
+
+@media screen and (max-width: 720px) {
+  .subtitulo {
+    font-size: 30px; } }
+
+@media screen and (max-width: 720px) {
+  .resumen_nosotros {
+    width: 90%;
+    text-align: center;
+    margin-left: 15px; } }
+
+@media screen and (max-width: 720px) {
+  .textoresumen {
+    width: 90%;
+    text-align: center; } }
+
+header .encabezado_lista, header .logo-position, header .nav-position, .grid_container .box3, .grid_container .box3 iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid_container .box1, .grid_container .box1 h1, .grid_container .box4 {
+  display: flex;
+  justify-content: center;
+  text-align: center; }

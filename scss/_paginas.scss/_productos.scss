@@ -1,0 +1,15 @@
+.tipo_producto{
+    color: rgb(150, 63, 131);
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    font-size: 30px;
+    margin-left: -45px;
+}
+.productos{
+    background-image: url(../../Imagenes/fondoPastelitos.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

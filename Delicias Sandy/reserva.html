@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="delicias sandy, pagina, reposteria">
     <meta name="keywords" content="torta, torta de cumpleaños, tartas, tartas dulces, personalizado, dia de la madre, pasteleria, reposteria, pasteleria artesanal, casero, rico, torta personalizada, buenos aires, reposteria artesanal, desayuno, mesa dulce, eventos">
-    <title>Delicias Sandy| Reserva</title>
+    <meta name="description" content="Podes hacer tu reserva de una forma rapida y sencilla! Delicias Sandy, reposteria y pasteleria artesanal, hecho con amor.  ">
+    <title>Delicias Sandy|Reserva</title>
     <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -47,10 +47,10 @@
     </header>
     <main>
         <!-- Pasos para reservar -->
-        <h1>Hacé tu reserva!</h1>
-        <h2 class="subtitulo">Cómo hago mi reserva?</h2>
+
+        <h1 class="subtitulo">Cómo hago mi reserva?</h1>
         <div>
-        <ol class="producto">
+        <ol class="productos">
             <li class="tipo_producto">Mira nuestra pagina✓</li>
             <li class="tipo_producto">Elegi tus productos✓</li>
             <li class="tipo_producto">Completa los datos✓</li>
@@ -61,22 +61,24 @@
         </div>
         <!-- Formulario -->
         <form>
-            <div>
+            <div class="responsive">
+                <div class="tabla">
                 <label for="text">Nombre Completo</label>
             <input type= "text" placeholder="Nombre Completo">
-            <div>
+                </div> 
+            <div class="tabla">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="Mail">
                 </div>
-                <div>
+                <div class="tabla">
                 <label for="text">Dejanos tu pedido</label>
                 <input type="textarea" id="mensaje">
                 <label for="text">Selecciona tu fecha de entrega</label>
-                <input type="week">
-            </div>
+                <input type="date">
+                </div>
             <!-- Metodos de pago -->
-            <h3 class="h3">Metodos de pago</h3>
-            <div class="producto">
+            <h3>Metodos de pago</h3>
+            <div class="producto tabla ">
                 <input type="radio" id="Efectivo" name="pago">
                  <label for="">Efectivo</label>
                 <input type="radio" id="Credito" name="pago">
@@ -91,9 +93,10 @@
             </div>
         </form>
         <!-- Tabla de Envios -->
-        <section>
+        <section class="responsive">
                 <h2 class="subtitulo">Envios</h2>
-                <table cellspacing="2" border="1" cellpadding="8">
+                <div class="tabladeenvios">
+                <table class="tabla" cellspacing="3" border="5" cellpadding="10">
                     <tr>
                         <th>ZONA</th>
                         <th>PARTIDO</th>
@@ -119,8 +122,8 @@
                         <td>$250</td>
                     </tr>
                     <tr>
-                        <td>ZONA OESTE</td>
-                        <td>La Matanza</td>
+                        <td>ZONA OESTE   </td>
+                        <td> La Matanza</td>
                         <td>$300</td>
                     </tr>
                 </table>
@@ -131,13 +134,13 @@
         <h3 class="subtitulo">Seguinos en nuestras redes</h3>
         <ul class="encabezado_lista">
             <li class="redes">
-                <a href="https://www.facebook.com/mipagina" target="_blank"><img src="../Imagenes/Facebook_Logo_(2019).png" alt="Logo Facebook" class="facebook" ></a>
+                <a href="https://www.facebook.com/mipagina" target="_blank"><img src="../Imagenes/Facebook_Logo_(2019) (1).png" alt="Logo Facebook" class="facebook" ></a>
             </li>
             <li class="redes">
-                <a href="https://www.instagram.com/deli.ciassandy/" target="_blank"><img src="../Imagenes/Instagram-Logo-PNG-File.png" alt="Logo Instagram" class="instagram"></a>
+                <a href="https://www.instagram.com/deli.ciassandy/" target="_blank"><img src="../Imagenes/Instagram-Logo-PNG-File (1).png" alt="Logo Instagram" class="instagram"></a>
             </li>
             <li class="redes">
-                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../Imagenes/whatsapp-logo-11.png" alt="Logo Whatsapp" class="whatsapp"></a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../Imagenes/whatsapp-logo-11 (1).png" alt="Logo Whatsapp" class="whatsapp"></a>
             </li>    
         </ul>
     </footer>
